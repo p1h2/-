@@ -92,7 +92,7 @@ int shanchu(b *c,string name)   //查找要删除的人
 			return -1;
 	}
 }
-void shanchu1(b* c)
+void shanchu1(b* c)//删除联系人
 {
 	int i;
 	cout << "查找要删除的人";
@@ -108,6 +108,20 @@ void shanchu1(b* c)
 			c->number--;
 			cout << "删除成功";
 		}
+}
+void findperson(b* c)   //查找联系人
+{
+	cout << "查找的人：";
+	string name;
+	cin >> name;
+	int rent = shanchu(c, name);
+	if (rent == -1)
+		cout << "查无此人";
+	else
+	{
+		cout << "联系人:" << c->lianxiren[rent].name << " 年龄" << c->lianxiren[rent].age << "岁 " << "性别:" << (c->lianxiren[rent].sex == 1 ? "男" : "女") << " 电话号码:" << c->lianxiren[rent].number;
+		cout << " 家庭地址:" << c->lianxiren[rent].address << endl;
+	}
 }
 int main()
 { 
@@ -127,7 +141,8 @@ int main()
 		case 3://删除联系人
 			shanchu1(&c);
 			break;
-		case 4:
+		case 4://查找联系人
+			findperson(&c);
 			break;
 		case 5:
 			break;
