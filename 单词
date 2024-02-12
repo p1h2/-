@@ -1,3 +1,3 @@
-type类型，种类     capacity容量，才能  erase擦除，取消
+type类型，种类     capacity容量，才能  erase擦除，取消   empty空的，无意义的   sort种类，排序
 insert插入，添加   swap交换  reserve保留，预定   assign给予，指派
  
