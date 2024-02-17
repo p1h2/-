@@ -1,4 +1,4 @@
-type类型，种类     capacity容量，才能  erase擦除，取消   empty空的，无意义的   sort种类，排序   sector部门，邻域
-insert插入，添加   swap交换  reserve保留，预定   assign给予，指派  push推  pop出现，突然出现
+type类型，种类     capacity容量，才能  erase擦除，取消   empty空的，无意义的   sort种类，排序   sector部门，邻域   greater大的
+insert插入，添加   swap交换  reserve保留，预定   assign给予，指派  push推  pop出现，突然出现   functional功能的，函数的
  reverse反转，调换
 //栈容器 stack 先进后出 符合地铁  stack<int>s;
